@@ -1,11 +1,14 @@
 /*Body*/
 body {
-
+    margin: 0;
+    padding: 0;
 }
 
 /*Header*/
 header {
-
+    background-color: lightgray;
+    padding: 1px;
+    border-bottom: 5px solid #afafaf;
 }
 
 /*Navigation*/
@@ -26,19 +29,6 @@ main {
 
 }
 
-/*Section*/
-main section {
-
-}
-
-main section h2 {
-
-}
-
-main section p {
-
-}
-
 /*Article*/
 main section article {
 
@@ -49,6 +39,19 @@ main section article h3 {
 }
 
 main section article p {
+
+}
+
+/*Section*/
+main section {
+
+}
+
+main section h2 {
+
+}
+
+main section p {
 
 }
 
