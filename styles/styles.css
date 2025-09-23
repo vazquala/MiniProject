@@ -30,37 +30,48 @@ nav ul a:hover {
 
 /*Main*/
 main {
+    margin: 10px;
+}
+
+/*Articles*/
+main article {
+    margin: 20px;
+}
+
+main article h2 {
 
 }
 
-/*Article*/
-main section article {
+main article p {
 
 }
 
-main section article h3 {
+main article section {
+    margin: 20px;
+}
+
+main article section h3 {
 
 }
 
-main section article p {
+main article section p {
 
 }
 
-/*Section*/
-main section {
+main article section section {
 
 }
 
-main section h2 {
+main article section section h4 {
 
 }
 
-main section p {
+main article section section p {
 
 }
 
 /*Footer*/
 
 footer {
-
+    margin: 10px;
 }
