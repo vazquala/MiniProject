@@ -37,49 +37,19 @@ main {
     margin: 20px;
 }
 
-/*Articles*/
-main article {
-    margin: 20px;
-}
-
-main article h2 {
-
-}
-
-main article p {
-
-}
-
-main article section {
-    margin: 20px;
+/*Sections*/
+section {
     padding: 20px;
-    border: #c0d2e6 solid 10px;
-    background-color: #d5e3f3;
 }
 
-main article section h3 {
-
-}
-
-main article section p {
+section h2 {
 
 }
 
-main article section section {
-    border: black solid 1px;
-    background-color: #f8fcff;
-}
-
-main article section section h4 {
-
-}
-
-main article section section p {
-}
-
-/*Classes*/
-.note {
-    background-color: #ffffa1;
+section p {
+    border: 1px solid #000000;
+    padding: 10px;
+    background-color: #fafbff;
 }
 
 /*Footer*/
