@@ -23,6 +23,10 @@ nav {
     text-decoration: none;
 }
 
+nav a {
+    color: white;
+}
+
 nav a:visited {
     color: #e0f3ff;
 }
@@ -42,27 +46,10 @@ main article {
     margin: 20px;
 }
 
-main article h2 {
-
-}
-
-main article p {
-
-}
-
 main article section {
     margin: 20px;
     padding: 20px;
-    border: #c0d2e6 solid 10px;
     background-color: #d5e3f3;
-}
-
-main article section h3 {
-
-}
-
-main article section p {
-
 }
 
 main article section section {
@@ -70,20 +57,63 @@ main article section section {
     background-color: #f8fcff;
 }
 
-main article section section h4 {
-
-}
-
-main article section section p {
-}
-
 /*Classes*/
 .note {
     background-color: #ffffa1;
 }
 
-/*Footer*/
+.introduction {
+    color: #76808a;
+}
 
+.homepage-link {
+    color: #585d65;
+    background-color: #f8fcff;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.homepage-link:visited {
+    color: #4a4b55;
+    text-decoration: none;
+}
+
+.homepage-link:hover {
+    color: #9098a3;
+    text-decoration: none;
+}
+
+.homepage-section {
+    background-color: #e2ebf4;
+}
+
+.external-link {
+    color: #c7cddc;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.external-link:visited {
+    color: #3f404a;
+    text-decoration: none;
+}
+
+.external-link:hover {
+    color: #9eaab8;
+    text-decoration: none;
+}
+
+/*IDS*/
+#pose-to-pose {
+    width: 25%;
+    height: 25%;
+}
+
+#spacing {
+
+}
+
+/*Footer*/
 footer {
     margin: 10px;
 }
