@@ -88,18 +88,18 @@ main article section section {
 }
 
 .external-link {
-    color: #c7cddc;
+    color: #8089aa;
     padding: 3px;
     text-decoration: none;
 }
 
 .external-link:visited {
-    color: #3f404a;
+    color: #3b3e55;
     text-decoration: none;
 }
 
 .external-link:hover {
-    color: #9eaab8;
+    color: #97a3b1;
     text-decoration: none;
 }
 
@@ -109,8 +109,24 @@ main article section section {
     height: 25%;
 }
 
-#spacing {
+#follow-through {
+    width: 25%;
+    height: 25%;
+}
 
+#spacing {
+    width: 25%;
+    height: 25%;
+}
+
+#arcs {
+    width: 25%;
+    height: 25%;
+}
+
+#cuphead {
+    width: 20%;
+    height: 20%;
 }
 
 /*Footer*/
