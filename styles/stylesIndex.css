@@ -4,13 +4,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #2c2f32;
+    background-color: #222629;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Header*/
 header {
-    background-image: linear-gradient(60deg, #7b8aec, #8bd8e8);
+    background-image: linear-gradient(60deg, #6057e4, #98e6f4);
     padding: 40px;
     text-align: center;
     color: white;
@@ -18,7 +18,7 @@ header {
 
 /*Navigation*/
 nav {
-    background-color: #1e2222;
+    background-color: #181c1c;
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -37,10 +37,10 @@ nav a:visited {
 
 nav a:hover {
     color: #ffffff;
-    transition: 150ms;
+    transition: 100ms;
     transition-timing-function: ease-in;
     transform: scale(1.05);
-    background-color: #586265;
+    background-color: #585f65;
     text-decoration: underline;
 }
 
@@ -48,23 +48,6 @@ nav a:hover {
 main {
     margin: 20px;
     color: #ffffff;
-}
-
-/*Articles*/
-main article {
-    margin: 20px;
-}
-
-main article section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #d5e3f3;
-    color: #090909;
-}
-
-main article section section {
-    border: black solid 1px;
-    background-color: #f8fcff;
 }
 
 /*Classes*/
@@ -81,6 +64,7 @@ main article section section {
     background-color: #f8fcff;
     padding: 3px;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .homepage-link:visited {
@@ -94,8 +78,17 @@ main article section section {
 }
 
 .homepage-section {
-    background-image: linear-gradient(60deg, #ebebf1, #acdde8);
+    background-image: linear-gradient(60deg, #d5eae3, #acdee8);
     border-radius: 10px;
+    padding: 20px;
+    color: #1e2222;
+}
+
+.homepage-section:hover {
+    background-image: linear-gradient(60deg, #e0efe9, #bde5ed);
+    transition: 120ms;
+    transition-timing-function: ease-in;
+    transform: scale(1.005) ;
 }
 
 .external-link {
@@ -121,6 +114,14 @@ main article section section {
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+.container {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(2, 4fr);
 }
 
 /*IDS*/
