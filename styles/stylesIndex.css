@@ -1,5 +1,3 @@
-/*Colors are temporary, it WILL change later.*/
-
 /*Body*/
 body {
     margin: 0;
@@ -56,7 +54,11 @@ main {
 }
 
 .introduction {
+    text-align: center;
+    padding: 10px;
     color: #90959a;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #191c1e 0%, #1c1f22 90%);
 }
 
 .homepage-link {
@@ -88,7 +90,9 @@ main {
     background-image: linear-gradient(60deg, #e0efe9, #bde5ed);
     transition: 120ms;
     transition-timing-function: ease-in;
-    transform: scale(1.005) ;
+    transform: scale(1.005) translateY(-5px);
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px #1a1b1c;
 }
 
 .external-link {
@@ -107,50 +111,90 @@ main {
     text-decoration: none;
 }
 
-.flex-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.container {
-    display: grid;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-    grid-template-columns: repeat(2, 4fr);
-}
-
-/*IDS*/
-#pose-to-pose {
-    width: 25%;
-    height: 25%;
-}
-
-#follow-through {
-    width: 25%;
-    height: 25%;
-}
-
-#spacing {
-    width: 25%;
-    height: 25%;
-}
-
-#arcs {
-    width: 25%;
-    height: 25%;
-}
-
-#cuphead {
-    width: 20%;
-    height: 20%;
-}
-
 /*Footer*/
 footer {
     margin: 10px;
+    color: #ffffff;
+}
+
+/*Media Queries*/
+@media (min-width: 1px) {
+    main {
+        font-size: smaller;
+    }
+
+    .container {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 20px;
+        grid-template-columns: repeat(1, 4fr);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: small;
+    }
+}
+
+@media (min-width: 601px) {
+    main {
+        font-size: Medium;
+    }
+
+    .container {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 20px;
+        grid-template-columns: repeat(2, 4fr);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: medium;
+    }
+}
+
+@media (min-width: 1025px) {
+    main {
+        font-size: Large;
+    }
+
+    .container {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 20px;
+        grid-template-columns: repeat(4, 4fr);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: large;
+    }
 }

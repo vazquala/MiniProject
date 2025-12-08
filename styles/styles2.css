@@ -1,0 +1,241 @@
+/*The structuring is too far gone to be fixed at this point.*/
+
+/*Body*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222629;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Header*/
+header {
+    background-image: linear-gradient(60deg, #66e692, #98d1f4);
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+/*Navigation*/
+nav {
+    background-color: #181c1c;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    background-color: #4c5559;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav a:visited {
+    color: #e0f3ff;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transition: 100ms;
+    transition-timing-function: ease-in;
+    transform: scale(1.05);
+    background-color: #585f65;
+    text-decoration: underline;
+}
+
+/*Main*/
+main {
+    margin: 20px;
+    color: #ffffff;
+}
+
+/*Classes*/
+.note {
+    background-color: #ffffa1;
+}
+
+.examples-list {
+    padding: 5px;
+    background-color: #f3ffeb;
+    border-radius: 10px;
+}
+
+.introduction {
+    text-align: center;
+    padding: 10px;
+    color: #90959a;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #191c1e 0%, #1c1f22 90%);
+}
+
+.homepage-link {
+    color: #585d65;
+    background-color: #f8fcff;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.homepage-link:visited {
+    color: #4a4b55;
+    text-decoration: none;
+}
+
+.homepage-link:hover {
+    color: #9098a3;
+    text-decoration: none;
+}
+
+.section {
+    background-image: linear-gradient(60deg, #d5eae3, #c4edb7);
+    border-radius: 10px;
+    padding: 20px;
+    color: #1e2222;
+}
+
+.section:hover {
+    background-image: linear-gradient(60deg, #e0efe9, #d2efce);
+    transition: 120ms;
+    transition-timing-function: ease-in;
+    transform: scale(1.005) translateY(-5px);
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px #1a1b1c;
+}
+
+/*IDS*/
+#pose-to-pose {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+#follow-through {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+#spacing {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+#arcs {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+#cuphead {
+    width: 20%;
+    height: 20%;
+}
+
+#example-1 {
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: 120ms;
+    transition-timing-function: ease-in;
+}
+
+#example-1:hover {
+    transform: translateX(50px);
+}
+
+#example-2 {
+
+}
+
+#example-3 {
+
+}
+
+/*Footer*/
+footer {
+    margin: 10px;
+    color: #ffffff;
+}
+
+/*Media Queries*/
+@media (min-width: 1px) {
+    main {
+        font-size: smaller;
+    }
+
+    .container {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 20px;
+        grid-template-columns: repeat(1, 4fr);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: small;
+    }
+}
+
+@media (min-width: 601px) {
+    main {
+        font-size: Medium;
+    }
+
+    .container {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 20px;
+        grid-template-columns: repeat(2, 4fr);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: medium;
+    }
+}
+
+@media (min-width: 1025px) {
+    main {
+        font-size: Large;
+    }
+
+    .container {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 40px;
+        grid-template-columns: repeat(4, 4fr);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: large;
+    }
+}
