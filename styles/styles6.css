@@ -1,0 +1,230 @@
+/*The structuring is too far gone to be fixed at this point.*/
+
+/*Body*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, #222829, #2f3337);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Header*/
+header {
+    background-image: linear-gradient(60deg, #f867fd, #da7676);
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+/*Navigation*/
+nav {
+    background-color: #181c1c;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    background-color: #4c5559;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav a:visited {
+    color: #e0f3ff;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transition: 100ms;
+    transition-timing-function: ease-in;
+    transform: scale(1.05);
+    background-color: #585f65;
+    text-decoration: underline;
+}
+
+/*Main*/
+main {
+    margin: 20px;
+    color: #ffffff;
+}
+
+/*Animation*/
+@keyframes myAnimation {
+    0% {left:50px; top:50px; width: 120px; height: 80px}
+    50% {left:50px; top:-50px; width: 80px; height: 120px}
+    100% {left:50px; top:50px; width: 120px; height: 80px}
+}
+
+.CSS-animation {
+    color: #181c1c;
+    background-color: #98e6f4;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    position: relative;
+    animation-name: myAnimation;
+}
+
+/*Classes*/
+
+.prison {
+    align-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #616467;
+}
+
+.note {
+    background-color: #ffffa1;
+}
+
+.introduction {
+    text-align: center;
+    padding: 10px;
+    color: #90959a;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #191c1e 0%, #1c1f22 90%);
+}
+
+.homepage-link {
+    color: #585d65;
+    background-color: #f8fcff;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.homepage-link:visited {
+    color: #4a4b55;
+    text-decoration: none;
+}
+
+.homepage-link:hover {
+    color: #9098a3;
+    text-decoration: none;
+}
+
+.section {
+    background-image: linear-gradient(45deg, #efde9c, #ce92dc);
+    border-radius: 10px;
+    padding: 20px;
+    color: #1e2222;
+    float: left;
+    clear: both;
+}
+
+.section:hover {
+    background-image: linear-gradient(45deg, #f7c5fa, #e3d6ac);
+    transition: 120ms;
+    transition-timing-function: ease-in;
+    transform: scale(1.005) translateY(-5px);
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px #1a1b1c;
+}
+
+/*IDS*/
+
+#cuphead {
+    float: left;
+    width: 160px;
+    height: 160px;
+}
+
+#cuphead2 {
+    float: right;
+    width: 200px;
+    height: 160px;
+}
+
+/*Footer*/
+footer {
+    margin: 10px;
+    color: #ffffff;
+}
+
+/*Media Queries*/
+@media (min-width: 1px) {
+    main {
+        font-size: smaller;
+    }
+
+    .container {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: small;
+    }
+}
+
+@media (min-width: 601px) {
+    main {
+        font-size: Medium;
+    }
+
+    .container {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: medium;
+    }
+}
+
+@media (min-width: 1025px) {
+    main {
+        font-size: Large;
+    }
+
+    .container {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: large;
+    }
+}
