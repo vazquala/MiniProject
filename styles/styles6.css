@@ -10,7 +10,7 @@ body {
 
 /*Header*/
 header {
-    background-image: linear-gradient(60deg, #f867fd, #da7676);
+    background-image: linear-gradient(60deg, #fdf667, #be76da);
     padding: 40px;
     text-align: center;
     color: white;
@@ -72,13 +72,6 @@ main {
 
 /*Classes*/
 
-.prison {
-    align-content: center;
-    width: 200px;
-    height: 200px;
-    background-color: #616467;
-}
-
 .note {
     background-color: #ffffa1;
 }
@@ -110,7 +103,7 @@ main {
 }
 
 .section {
-    background-image: linear-gradient(45deg, #efde9c, #ce92dc);
+    background-image: linear-gradient(45deg, #efe89c, #ce92dc);
     border-radius: 10px;
     padding: 20px;
     color: #1e2222;
@@ -126,6 +119,7 @@ main {
     border-radius: 20px;
     box-shadow: 5px 10px 20px #1a1b1c;
 }
+
 
 /*IDS*/
 
@@ -145,6 +139,10 @@ main {
 footer {
     margin: 10px;
     color: #ffffff;
+}
+
+#list {
+
 }
 
 /*Media Queries*/
