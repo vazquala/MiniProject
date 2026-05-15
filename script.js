@@ -4,7 +4,7 @@ const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 async function loadEntries() {
     const {data, error} = await db
-        .from('guestbook')
+        .from('movies')
         .select('*')
         .order('created_at', {ascending: false});
 
@@ -18,6 +18,7 @@ async function loadEntries() {
         html += `<div class="entry">
                       <strong>${entry.name}</strong>
                       <p>${entry.message}</p>
+                      </div class="time">${new Date(entry.created_at).toLocaleString()}</div>
                 </div>
                 <button class="del-btn" onclick="deleteEntry(${entry.id})">X</button>`
     });
@@ -26,7 +27,7 @@ async function loadEntries() {
 
 async function deleteEntry(id) {
     const {error} = await db
-        .from('guestbook')
+        .from('movies')
         .delete()
         .eq('id', id)
 
@@ -44,7 +45,7 @@ document.querySelector("#guest-form").addEventListener("submit", async (e) => {
     const msgValue = document.querySelector("#msg-input").value;
 
     const {error} = await db
-        .from('guestbook')
+        .from('movies')
         .insert([{name : nameValue, message : msgValue}]);
 
     if (error) {
