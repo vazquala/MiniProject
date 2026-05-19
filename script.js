@@ -16,26 +16,12 @@ async function loadEntries() {
     let html = "";
     data.forEach(entry => {
         html += `<div class="entry">
-                      <strong>${entry.name}</strong>
+                      <strong>${entry.name}'s favorite</strong>
                       <p>${entry.message}</p>
-                      </div class="time">${new Date(entry.created_at).toLocaleString()}</div>
-                </div>
-                <button class="del-btn" onclick="deleteEntry(${entry.id})">X</button>`
+                      
+                </div>`
     });
     document.querySelector('#entries').innerHTML = html;
-}
-
-async function deleteEntry(id) {
-    const {error} = await db
-        .from('movies')
-        .delete()
-        .eq('id', id)
-
-    if (error) {
-        alert("Error:" + error.message);
-        return;
-    }
-    loadEntries();
 }
 
 document.querySelector("#guest-form").addEventListener("submit", async (e) => {

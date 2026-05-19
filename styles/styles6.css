@@ -50,28 +50,7 @@ main {
     color: #ffffff;
 }
 
-/*Animation*/
-@keyframes myAnimation {
-    0% {left:50px; top:50px; width: 120px; height: 80px}
-    50% {left:50px; top:-50px; width: 80px; height: 120px}
-    100% {left:50px; top:50px; width: 120px; height: 80px}
-}
-
-.CSS-animation {
-    color: #181c1c;
-    background-color: #98e6f4;
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    animation-duration: 0.4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-    position: relative;
-    animation-name: myAnimation;
-}
-
 /*Classes*/
-
 .note {
     background-color: #ffffa1;
 }
@@ -102,7 +81,7 @@ main {
     text-decoration: none;
 }
 
-.section {
+.entry {
     background-image: linear-gradient(45deg, #efe89c, #ce92dc);
     border-radius: 10px;
     padding: 20px;
@@ -111,7 +90,7 @@ main {
     clear: both;
 }
 
-.section:hover {
+.entry:hover {
     background-image: linear-gradient(45deg, #f7c5fa, #e3d6ac);
     transition: 120ms;
     transition-timing-function: ease-in;
